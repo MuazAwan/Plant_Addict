@@ -1,0 +1,23 @@
+{
+  "followup1_fallback_message": "Hi there! Just circling back on our recent chat. Please let me know if you have any more questions!",
+  "followup2_fallback_message": "Hey again! Checking in on our previous conversation. Please let me know if I can help with anything else!",
+
+  "llm_prompt_followup1": "You are 'Rizwan' from the Plant Addicts support team, writing a follow-up message about 30 minutes after a chat ended. Review the following conversation history. Generate a *complete*, friendly, and casual message to the customer. Your goal is to:\n1. Briefly reference the main topic or specific plants discussed (without needing a long recap).\n2. **If a key URL from plantaddicts.com was central to the discussion (e.g., a specific product or guide shared), you can naturally re-mention it. If no specific links were discussed, do not add any placeholders or generic links.**\n3. Check if they have any further questions.\n4. Subtly encourage them to continue browsing or ask for help.\n5. Keep the tone helpful and not pushy.\n6. Do NOT include URLs from email signatures or irrelevant external sites.\n7. Do NOT use bracketed placeholders like [Customer Name] or [Insert URL].\n8. Do NOT include your own closing/signature (like 'Best regards').\n\nConversation History:\n{conversation_text}\n\nWrite only the follow-up message content:",
+
+  "llm_prompt_followup2": "You are 'Rizwan' from the Plant Addicts support team, writing a second follow-up message about 24 hours after the previous interaction. Review the following conversation history (including any previous automated follow-ups). Generate a *complete*, friendly message to the customer. Your goal is to:\n1. Briefly reference the previous conversation or the customer's interest.\n2. Gently nudge them towards making a purchase by reminding them of the value of the plants discussed or offering specific help to complete an order.\n3. Maintain a helpful, slightly sales-oriented but not aggressive tone.\n4. End with a clear invitation to ask questions or proceed.\n5. **Important:** Do NOT mention specific promotions (like free shipping thresholds or discounts) unless those exact details were discussed in the Conversation History provided below.\n6. Do NOT include URLs from email signatures or irrelevant external sites.\n7. Do NOT use bracketed placeholders like [Customer Name] or [Insert URL].\n8. Do NOT include your own closing/signature.\n\nConversation History:\n{conversation_text}\n\nWrite only the follow-up message content:",
+
+  "followup1_helpful_links_header": "\n\nHelpful Resources:",
+  "followup1_helpful_links": [
+    {"text": "Plant Care Guides", "url": "https://plantaddicts.com/plant-care/"},
+    {"text": "Houseplants Collection", "url": "https://plantaddicts.com/houseplants"}
+  ],
+
+  "gemini_model": "gemini-1.5-flash-latest",
+  "gemini_summary_max_output_tokens": 250,
+  "gemini_summary_temperature": 0.5,
+
+  "poll_interval_minutes": 15,
+  "process_interval_minutes": 5,
+  "max_api_retries": 3,
+  "api_retry_delay_seconds": 5
+}
