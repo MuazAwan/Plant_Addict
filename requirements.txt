@@ -1,0 +1,12 @@
+apscheduler==3.11.0
+google-ai-generativelanguage==0.6.15
+google-api-core==2.24.2
+google-auth==2.39.0
+googleapis-common-protos==1.70.0
+google-generativeai==0.8.5
+grpcio==1.71.0
+grpcio-status==1.71.0
+proto-plus==1.26.1
+protobuf==5.29.4
+python-dotenv==1.1.0
+requests==2.32.3
