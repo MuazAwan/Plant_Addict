@@ -189,4 +189,4 @@ For production, the script needs to run continuously on a server. Recommended pl
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file (you'll need to create this) for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md).
